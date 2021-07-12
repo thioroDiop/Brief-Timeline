@@ -1,0 +1,6 @@
+.card:hover .response,
+.card:hover .response:before {
+  transform: translateY(0) translateZ(0);
+
+
+}

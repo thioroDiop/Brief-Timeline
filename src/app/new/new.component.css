@@ -1,0 +1,15 @@
+#updateCard{
+  display:none;
+  /*Permet de cacher le block*/
+}
+
+table {
+  border : purple solid;
+  margin: auto;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  /*border-spacing définit la distance qu'il y a entre les bordures de cellules adjacentes d'un tableau (uniquement lorsque border-collapse vaut separate)*/
+}
