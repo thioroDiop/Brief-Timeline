@@ -9,10 +9,7 @@ import {CardService} from "../card.service";
 export class UpdateComponent implements OnInit {
   cardList = this.cardService.getCardList(1);
 
-  newTimelineForm = this.formBuilder.group({
-      });
-
-  constructor(private cardService: CardService) {
+    constructor(private cardService: CardService) {
   }
 
   ngOnInit(): void {
