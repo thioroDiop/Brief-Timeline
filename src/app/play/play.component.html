@@ -14,19 +14,22 @@
 </section>
 
 <section>
-  <div *ngIf="guessingCard">
+
     <h2> Carte à deviner</h2>
+  <div *ngIf="guessingCard" id="guessCard" >
     <h3>{{guessingCard.name}}</h3>
     <h3><img src="{{guessingCard.imageUrl}}" alt="image de la carte"/></h3>
     <h3>{{guessingCard.description}}</h3>
   </div>
 
   <h2> Carte trouvées </h2>
-  <div *ngFor="let cardGuessed of cardsAlreadyGuessed">
+  <div id="blockguessCard">
+  <div *ngFor="let cardGuessed of cardsAlreadyGuessed" id="guessCard" >
     <h3>{{cardGuessed.name}}</h3>
     <h3>{{cardGuessed.date}}</h3>
     <h3><img src="{{cardGuessed.imageUrl}}" alt="image de la carte déjà trouvée"/></h3>
     <h3>{{cardGuessed.description}}</h3>
+  </div>
   </div>
 </section>
 
